@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Data.Entities.Common
+namespace ECommerce.Data.Models.Entities.Identity
 {
-    internal class Category
+    public class BaseEntity
     {
     }
 }
