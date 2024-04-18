@@ -9,10 +9,9 @@ namespace ECommerce.Data.Models.ViewModels
 {
     public enum EnumOrderState
     {
-        [Display(Name = "Onay Bekleniyor")]
+        [Display(Name= "Onay Bekleniyor")]
         waiting,
         [Display(Name = "Tamamlandı")]
         Completed
-
     }
 }
