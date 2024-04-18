@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Business.Abstract
 {
-    public interface IGenericRepository<TEntity> where TEntity : class,new()
+    public interface IGenericRepository<Tentity>
+          where Tentity : class, new()
     {
-        List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null);
-        TEntity Get(int id);
-        TEntity Get(Expression<Func<TEntity, bool>> filter = null);
-        void Add(TEntity entity);
-        void Update(TEntity entity);
+        List<Tentity> GetAll(Expression<Func<Tentity, bool>> filter = null);
+        Tentity Get(int id);
+        Tentity Get(Expression<Func<Tentity, bool>> filter);
+        void Add(Tentity entity);
+        void Update(Tentity entity);
         void Delete(int id);
-        void Delete(TEntity entity);
-
+        void Delete(Tentity entity);
 
     }
 }
